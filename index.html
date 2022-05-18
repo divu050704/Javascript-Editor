@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Editor</title>
+        <link rel="stylesheet" href="index.css">
+    
+        <script src="index.js"></script>
+        <!--Code mirror codes-->
+        <script src="codemirror-5.65.3/lib/codemirror.js"></script>
+        <link rel="stylesheet" href="codemirror-5.65.3/lib/codemirror.css">
+        <!--codemirror-5.65.3\theme\ayu-mirage.css-->
+        <link rel="stylesheet" href="codemirror-5.65.3/theme/ayu-mirage.css">
+        <link rel="stylesheet" href="codemirror-5.65.3\theme\dracula.css">
+        <script src="codemirror-5.65.3\addon\edit\closebrackets.js"></script>
+        <scrip src="codemirror-5.65.3\addon\edit\matchbrackets.js"></scrip>
+        
+        <script src="codemirror-5.65.3/mode/javascript/javascript.js"></script>
+    </head>
+    <body>
+        <div class="main-grid">
+            <div class="editor">
+                <div class="head">
+                    <h1>Editor</h1>
+                    <button>Run</button>
+                </div>
+                <textarea class="codemirror-textarea" id="code"></textarea>
+            </div>
+            <div class="shell">
+                <div class="head">
+                    <h1>Output</h1>
+                    <button>Clear</button>
+                </div>
+                <textarea class="codemirror-textarea">$</textarea>
+            </div>
+        </div>
+    </body>
+</html>
